@@ -13,18 +13,11 @@ namespace HDE
 	class SimpleSocket
 	{
 	public:
-		// constructor function
-		SimpleSocket(int domain, int service, int protocol, int port, u_long Interface);
-		
-		// test socket and network connection
-		void test_connection(int);
-
-		// virtual functions
-		virtual int connect_to_network(int sock, struct sockaddr_in address) = 0;
-		
-		// getter functions
-		struct sockaddr_in get_address();
-		int get_sock();
+		SimpleSocket(int domain, int service, int protocol, int port, u_long Interface);		
+		virtual void test_connection(int);
+		virtual int connect_to_network(int sock, struct sockaddr_in address) = 0;		
+		virtual struct sockaddr_in get_address();
+		virtual int get_sock();
 
 	private:
 		int sock;

@@ -10,11 +10,16 @@ namespace HDE
 	{
 	public:
 		// constructor function
-		BindingSocket(int domain, int service, int protocol, int port, u_long Interface)
-			: SimpleSocket(domain, service, protocol, port, Interface) {};
+		BindingSocket(int domain, int service, int protocol, int port, u_long Interface);
 		
 		// start connection function
-		int connect_to_network(int sock, struct sockaddr_in address) override;
+		int connect_to_network(int sock, struct sockaddr_in address);
+
+		// getters
+		int get_binding();
+
+	private:
+		int binding;
 	};
 }
 

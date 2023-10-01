@@ -11,6 +11,7 @@ namespace HDE
 	public:
 		// constructor function
 		ListeningSocket(int domain, int service, int protocol, int port, u_long Interface, int backlog);
+
 		// start listening
 		void start_listening();
 

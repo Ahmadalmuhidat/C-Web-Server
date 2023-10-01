@@ -5,10 +5,10 @@ HDE::ListeningSocket::ListeningSocket(int domain, int service, int protocol, int
 {
 	this->backlog = backlog;
 	start_listening();
-	test_connection(this->listening);
+	test_connection(listening);
 }
 
 void HDE::ListeningSocket::start_listening()
 {
-	this->listening = listen(get_connection(), this->backlog);
+	this->listening = listen(get_sock(), backlog);
 }

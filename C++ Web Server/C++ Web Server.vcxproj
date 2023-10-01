@@ -131,11 +131,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Networking\Server\SimpleServer.cpp" />
+    <ClCompile Include="Networking\Server\TestServer.cpp" />
+    <ClCompile Include="Networking\Sockets\BindingSocket.cpp" />
     <ClCompile Include="Networking\Sockets\ConnectingSocket.cpp" />
     <ClCompile Include="Networking\Sockets\ListeningSocket.cpp" />
     <ClCompile Include="Networking\Sockets\SimpleSocket.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Networking\Server\SimpleServer.hpp" />
+    <ClInclude Include="Networking\Server\TestServer.hpp" />
     <ClInclude Include="Networking\Sockets\BindingSocket.hpp" />
     <ClInclude Include="Networking\Sockets\ConnectingSocket.hpp" />
     <ClInclude Include="Networking\hdelibc-networking.hpp" />

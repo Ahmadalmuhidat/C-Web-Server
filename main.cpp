@@ -1,5 +1,4 @@
 
-#include "Networking/hdelibc-networking.hpp"
 #include "Networking/Server/TestServer.hpp"
 
 int main()
@@ -15,7 +14,7 @@ int main()
         // HDE::ListeningSocket ls = HDE::ListeningSocket(AF_INET, SOCK_STREAM, 0, 80, INADDR_ANY, 80);
 
         std::cout << "Test Server" << std::endl;
-        HDE::TestServer t;
+        HDE::TestServer TestServer;
     }
     catch (std::exception e)
     {

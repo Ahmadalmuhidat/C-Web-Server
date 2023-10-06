@@ -1,12 +1,13 @@
 #ifndef Testerver_hpp
 #define TestServer_hpp
 
-#include <io.h>
-#include <fcntl.h>
-#include <sys/stat.h>
-#include <process.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "SimpleServer.hpp"
 

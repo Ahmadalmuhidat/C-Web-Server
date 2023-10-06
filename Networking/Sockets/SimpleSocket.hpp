@@ -1,12 +1,11 @@
 #ifndef SimpleSocket_hpp
 #define SimpleSocket_hpp
 
+#include <iostream>
 #include <stdio.h>
-#include <winsock2.h>
-#include <ws2tcpip.h>
-#include <windows.h>
-
-#pragma comment(lib, "Ws2_32.lib")
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <unistd.h>
 
 namespace HDE
 {

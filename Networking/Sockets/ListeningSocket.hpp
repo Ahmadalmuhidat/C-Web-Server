@@ -1,8 +1,6 @@
 #ifndef ListeningSocket_hpp
 #define ListeningSocket_hpp
 
-#include<stdio.h>
-
 #include "BindingSocket.hpp"
 
 namespace HDE

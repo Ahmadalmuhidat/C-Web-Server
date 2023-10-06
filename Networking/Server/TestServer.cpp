@@ -10,7 +10,7 @@ void HDE::TestServer::accepter()
 	struct sockaddr_in address = get_socket()->get_address();
 	int addrlen = sizeof(address);
 	new_socket = accept(get_socket()->get_sock(), (struct sockaddr *)& address, (socklen_t*)& addrlen);
-	_read(new_socket, buffer, 30000);
+	read(new_socket, buffer, 30000);
 }
 
 void HDE::TestServer::handler()
@@ -21,8 +21,8 @@ void HDE::TestServer::handler()
 void HDE::TestServer::responder()
 {
 	const char* hello = "hello from server";
-	_write(new_socket, hello, strlen(hello));
-	_close(new_socket);
+	write(new_socket, hello, strlen(hello));
+	close(new_socket);
 }
 
 void HDE::TestServer::lunch()

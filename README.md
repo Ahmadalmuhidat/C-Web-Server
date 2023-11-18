@@ -41,4 +41,4 @@ This project implements a simple web server in C++ capable of handling HTTP requ
 - Ahmad Almuhidat
 
 ## Support
-For any issues, suggestions, or inquiries, feel free to contact ahmada.almuhidat@gmail.com.
+For any issues, suggestions, or inquiries, feel free to contact ahmad.almuhidat@gmail.com.

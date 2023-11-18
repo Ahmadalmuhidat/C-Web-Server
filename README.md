@@ -7,7 +7,6 @@ This project implements a simple web server in C++ capable of handling HTTP requ
 - **HTTP Request Handling:** Processes incoming HTTP requests (GET, POST, etc.).
 - **Static Content Serving:** Serves static files (HTML, CSS, JS, images, etc.) to clients.
 - **Basic Routing:** Supports basic routing to different endpoints or URLs.
-- **Multi-Threading (Optional):** Can be implemented with multi-threading to handle multiple requests concurrently.
 
 ## Usage
 1. **Compilation:**
@@ -26,7 +25,6 @@ This project implements a simple web server in C++ capable of handling HTTP requ
 - **HTTP Protocol:** The server follows the HTTP protocol for request and response handling.
 - **Socket Programming:** Uses socket programming to establish connections and handle data transmission.
 - **File I/O:** Utilizes file I/O operations to read and serve static files requested by clients.
-- **Threading (Optional):** Optionally employs threading for concurrent request handling.
 
 ## File Structure
 - `server.cpp`: Contains the main implementation of the web server.
